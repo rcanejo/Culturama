@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap');
+
+:root {
+    --cor-BG-header-footer-botoes: #000000;
+    --cor-BG-main: #FFFFFF;
+    --cor-BG-categorias-amarelo: #FFC756;
+    --cor-BG-categorias-laranja: #F66139;
+    --cor-BG-categorias-lavanda: #7F8FFE;
+    --cor-BG-categorias-verde: #56B78C;
+    --cor-BG-titulo-img: rgba(217, 217, 217, 0.50);
+    --cor-BG-descricao-eventos: #D9D9D9;
+    --cor-BG-descricao-agenda-data: #959595;
+    --cor-nav-hover: #FFC756;
+
+
+    --fonte-titulos: 'Fjalla One', sans-serif;
+    --font-textos: 'Work Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    padding: 1em 1.5em;
+    font-family: var(--fonte-titulos);
+    background-color: var(--cor-BG-header-footer-botoes);
+    color: var(--cor-BG-main);
+}
+
+
+.cabecalho__lista {
+    display: flex;
+    gap: 2em;
+}
+
+
+.lista-item {
+    text-decoration: none;
+    color: var(--cor-BG-main);
+
+}
+
+
+.lista-item-local {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.cabecalho-pesquisa {
+    padding: 0.9em 0.5em;
+    border-radius: 10px;
+    border: 2px solid var(--cor-BG-main);
+    width: 100%;
+    background-color: transparent;
+    background-image: url(../assets/lupa-pesquisar.svg);
+    background-repeat: no-repeat;
+    background-position: 95%;
+    color: var(--cor-BG-main);
+    font-family: var(--font-textos);
+}
+
+.cabecalho-pesquisa::placeholder {
+    font-family: var(--font-textos);
+    font-size: 1rem;
+}
+
+.conteudo {
+    padding: 0 1.5em;
+}
+
+.conteudo__banners {
+    display: grid;
+    gap: 1rem;
+}
+
+.conteudo__banners img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo__banners img:nth-child(1) {
+    grid-column: 1/3;
+}
+
+.conteudo__banners img:nth-child(4) {
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+.conteudo__categorias-destaques {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.categorias-titulo {
+    margin: 1em 0;
+    font-family: var(--fonte-titulos);
+    font-size: 1.3rem;
+}
+
+.categorias-lista-1 {
+    text-align: center;
+    margin-bottom: 0.8em;
+    padding: 1.5em 0;
+    background-color: var(--cor-BG-categorias-amarelo);
+}
+
+.categorias-lista-2 {
+    text-align: center;
+    margin-bottom: 0.8em;
+    padding: 1.5em 0;
+    background-color: var(--cor-BG-categorias-laranja);
+}
+
+.categorias-lista-3 {
+    text-align: center;
+    margin-bottom: 0.8em;
+    padding: 1.5em 0;
+    background-color: var(--cor-BG-categorias-lavanda);
+}
+
+.categorias-lista-4 {
+    text-align: center;
+    margin-bottom: 0.8em;
+    padding: 1.5em 0;
+    background-color: var(--cor-BG-categorias-verde);
+}
+
+.categorias-lista-5 {
+    text-align: center;
+    margin-bottom: 0.8em;
+    padding: 1.5em 0;
+    background-color: var(--cor-BG-categorias-amarelo);
+}
+
+.categorias-lista-6 {
+    text-align: center;
+    margin-bottom: 0.8em;
+    padding: 1.5em 0;
+    background-color: var(--cor-BG-categorias-laranja);
+}
+
+.categorias-lista-7 {
+    text-align: center;
+    margin-bottom: 0.8em;
+    padding: 1.5em 0;
+    background-color: var(--cor-BG-categorias-lavanda);
+}
+
+.categorias-lista-8 {
+    text-align: center;
+    margin-bottom: 0.8em;
+    padding: 1.5em 0;
+    background-color: var(--cor-BG-categorias-verde);
+}
+
+
+.categorias-link {
+    text-decoration: none;
+    font-family: var(--fonte-titulos);
+    font-size: 1.3rem;
+    color: var(--cor-BG-main);
+
+}
+
+.destaques__cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.cabecalho-linha {
+    flex-grow: 1;
+    height: 2px;
+    border: none;
+    background-color: var(--cor-BG-header-footer-botoes);
+}
+
+.cabecalho-setas {
+    display: flex;
+    gap: 1em;
+}
+
+.destaques__apresentacao {
+    display: flex;
+    align-items: end;
+    background-image: url(../assets/danca-filipina.svg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+}
+
+.apresentacao-descricao {
+    background-color: var(--cor-BG-titulo-img);
+    margin: 50% 0 4% 0;
+    width: 95%;
+}
+
+.descricao-texto {
+    padding: 1em;
+    font-family: var(--fonte-titulos);
+    color: var(--cor-BG-main);
+}
+
+.conteudo__eventos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container {
+    width: 100%;
+}
+
+
+.container__eventos{
+    display: grid;
+    grid-template-rows: auto;
+    margin-bottom: 1em;
+}
+
+.container__eventos img{
+    width: 100%;
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+}
+
+.eventos-descricao {
+    background-color: var(--cor-BG-descricao-eventos);
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.13rem;
+    font-family: var(--font-textos);
+    font-weight: 600;
+    color: var(--cor-BG-header-footer-botoes);
+
+}
+
+.descricao-secundaria {
+    font-size: 1rem;
+    font-family: var(--font-textos);
+}
+
+.descricao-cabecalho {
+    margin: 1em 0 2em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.descricao-rodape {
+    margin: 0 1em 1em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.descricao-botao {
+    background-color: var(--cor-BG-header-footer-botoes);
+    font-family: var(--font-textos);
+    color: var(--cor-BG-main);
+    padding: 0.5em 2em;
+    width: fit-content;
+
+}
+
+.container-botao {
+    font-size: 1.13rem;
+    margin: 0 auto 2em;
+    padding: 1em 3em;
+}
+
+.conteudo__agendamento {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.agendamento__content {
+    width: 100%;
+}
+
+.agendamento__container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.container-boxOne1 {
+    width: 100%;
+    height: 8em;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-image: url(../assets/cinema-casais.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.container-boxOne2 {
+    background-image: url(../assets/cinema-pessoas.svg);
+}
+
+.container-boxOne3 {
+    background-image: url(../assets/baloes-imgP.svg);
+}
+
+.container-boxOne4 {
+    background-image: url(../assets/cantor-show.svg);
+}
+
+.container-boxOne img {
+    width: 100%;
+}
+
+.container-boxTwo {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: var(--cor-BG-descricao-agenda-data);
+    text-align: center;
+    padding: 1em 0;
+}
+
+.box-titulo {
+    font-size: 2rem;
+    color: var(--cor-BG-main);
+    font-family: var(--fonte-titulos);
+}
+
+.box-time {
+    font-size: 1.5rem;
+    color: var(--cor-BG-main);
+    font-family: var(--fonte-titulos);
+    margin: 0.3em 0.3em;
+}
+
+.container-boxThree {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 2em;
+    background-color: var(--cor-BG-descricao-eventos);
+}
+
+.boxThree-btn {
+    padding: 0.7em 2em;
+    margin: 0 auto;
+}
+
+
+footer {
+    background-color: var(--cor-BG-header-footer-botoes);
+    color: var(--cor-BG-descricao-eventos);
+}
+
+footer ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+footer ul li a {
+    color: var(--cor-BG-descricao-eventos);
+    font-size: 1rem;
+    font-family: var(--font-textos);
+}
+
+footer h4 {
+    font-size: 1.3rem;
+    font-family: var(--fonte-titulos);
+    margin-bottom: 0.3em;
+}
+
+.rodape__lista {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 2em;
+    column-gap: 1em;
+}
+
+
+
+
+.img2,
+.box-1440px {
+    display: none;
+}
+
+@media screen and (min-width: 720px) {
+    .img1 {
+        display: none;
+    }
+    
+    .img2 {
+        display: block;
+    }
+
+    .cabecalho {
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em 2em;
+    }
+
+    .cabecalho-pesquisa {
+        width: 50%;
+    }
+
+    .cabecalho__lista {
+        gap: 5em;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .conteudo {
+        padding: 0 2em;
+    }
+
+    .conteudo__banners {
+        grid-template-columns: calc(50% - 0.75rem) auto auto;
+        column-gap: 1.5em;
+    }
+    
+    .conteudo__banners img:nth-child(1) {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    
+    .conteudo__banners img:nth-child(4) {
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
+
+    .categorias-lista {
+        display: grid;
+        column-gap: 1.5em;
+    }
+
+    .categorias-lista li:nth-child(1) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .categorias-lista li:nth-child(8) {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    .categorias-lista li:nth-child(3) {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .categorias-lista li:nth-child(4) {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .categorias-lista li:nth-child(5) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 1.5em;
+        row-gap: 1.5em;
+    }
+
+    .container a{
+        grid-column: 2/3;
+        margin-left: auto;
+    }
+
+    .container__eventos {
+        margin-bottom: 0;
+    }
+
+    .agendamento__content {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 1.5em;
+        row-gap: 1.5em;
+    }
+
+    .agendamento__container {
+        margin-bottom: 0;
+    }
+
+    .agendamento__content a:nth-child(7){
+        grid-column: 2/3;
+        margin-left: auto;
+    }
+
+    .agendamento__content {
+        margin-bottom: 0;
+    }
+
+    .rodape__lista {
+        grid-template-columns: auto auto auto auto;
+        column-gap: 3em;
+        padding: 2em 4em 2em 2em;
+    }
+
+    footer ul li a {
+        font-size: 0.88rem;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10em;
+        padding: 1em 7em;
+    }
+
+    .cabecalho__lista {
+        justify-content: space-between;
+        gap: 0;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    
+    .categorias {
+        width: 50%;
+    }
+
+    .destaques {
+        width: 50%;
+    }
+
+    .conteudo {
+        padding: 0 7em;
+    }
+
+    .conteudo__categorias-destaques {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .apresentacao-descricao {
+        margin: 30% 0 4% 0;
+    }
+
+    .destaques__apresentacao {
+        background-image: url(../assets/filipinasdance1440px.svg);
+        margin-bottom: 0.8em;
+    }
+
+    .box-1440px {
+        display: grid;
+    }
+
+    .container {
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .conteudo__eventos>.container a:nth-child(9){
+        grid-column: 4/5;
+    }
+
+    .container-boxOne5 {
+        background-image: url(../assets/bailarinas.svg);
+    }
+
+    .container-boxOne6 {
+        background-image: url(../assets/festa-cores.svg);
+    }
+
+    .agendamento__content {
+        grid-template-columns: auto auto auto;
+    }
+
+    .agendamento__content a:nth-child(7){
+        grid-column: 3/4;
+    }
+
+    .rodape__lista {
+        grid-template-columns: auto auto auto auto auto;
+        column-gap: 3em;
+        padding: 3em 5%;
+    }
+}
